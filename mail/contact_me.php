@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
    $to = 'takemaru2150@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
    $email_subject = "Takeshi Sakurai のお問い合わせフォーム:  $name";
    $email_body = "あなたのウェブサイトの連絡フォームから新しいメッセージを受け取りました。\n\n"."＝＝＝＝＝＝＝＝＝>＝＝＝:\n\nお名前: $name\n\nメールアドレス: $email_address\n\n電話番号: $phone\n\nメッセージ:\n$message";
-   $headers = "From: kjj418sakurai@icloud.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+   $headers = "From: $email_address\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
    $headers .= "Reply-To: $email_address";   
    $go = mail($to,$email_subject,$email_body,$headers);
 
