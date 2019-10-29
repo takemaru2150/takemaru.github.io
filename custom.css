@@ -1,0 +1,8 @@
+/* カスタムCSS */
+
+/* コンタクトフォーム */
+.googleform_wrap {
+  display: flex;
+  justify-content: center;
+}
+/* end/コンタクトフォーム */
