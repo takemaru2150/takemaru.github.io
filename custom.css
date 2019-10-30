@@ -5,4 +5,10 @@
   display: flex;
   justify-content: center;
 }
-/* end/コンタクトフォーム */
+/* end/ コンタクトフォーム */
+
+/* Servicesセクション 各サービスの説明文 */
+.text_justify {
+  text-align: justify;
+}
+/* end/ Servicesセクション 各サービスの説明文 */
