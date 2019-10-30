@@ -18,3 +18,20 @@
   justify-content: flex-end;
 }
 /* end/ footer 各コンテンツの配置 */
+
+/* Portfolioセクション 各コンテンツの配置 */
+.flex_50 {
+  flex: 0 0 50%;
+  margin: 0 0 80px;
+  min-width: 50%;
+}
+#portfolio .portfolio-item {
+  margin: 0 0 50px;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 80px;
+  }
+}
+/* end/ Portfolioセクション 各コンテンツの配置 */
