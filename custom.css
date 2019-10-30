@@ -12,3 +12,9 @@
   text-align: justify;
 }
 /* end/ Servicesセクション 各サービスの説明文 */
+
+/* footer 各コンテンツの配置 */
+.flex-end {
+  justify-content: flex-end;
+}
+/* end/ footer 各コンテンツの配置 */
