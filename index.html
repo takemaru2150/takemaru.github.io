@@ -130,7 +130,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-left">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-right">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -144,7 +144,7 @@
             <p class="text-muted">Date: May 2019</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-right">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-left">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -158,7 +158,7 @@
             <p class="text-muted">Date: March 2019</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-left">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-right">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -172,7 +172,7 @@
             <p class="text-muted">Date: April 2019</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-right">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-left">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -576,26 +576,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
-  
-  <script type="text/javascript">
-    $(function(){
-
-      $(window).scroll(function (){
-        var fadeTrigger = $('.js-trigger');
-        $(fadeTrigger).each(function(){
-          var scroll = $(window).scrollTop(),
-              elemTop = $(this).offset().top,
-              windowHeight = $(window).height();
-
-          if (scroll > elemTop - windowHeight){
-            $(this).addClass('fade-scale');
-          }
-        });
-      });
-      $(window).trigger('scroll');
-
-});
-  </script>
+  <script src="js/custom.min.js"></script>
 
 </body>
 
