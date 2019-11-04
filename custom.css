@@ -66,7 +66,7 @@
 /* end/ footer 各コンテンツの配置 */
 
 
-/* servicesセクションのjsスクロールアニメーション */
+/* topセクションとservicesセクションのjsスクロールアニメーション */
 .fade-type-scale {
   opacity: 0;
   transform: scale(.5);
@@ -76,21 +76,13 @@
 .fade-scale {
   opacity: 1;
   transform: scale(1);
-}/* end/ servicesセクションのjsスクロールアニメーション */
+}/* end/ topセクションとservicesセクションのjsスクロールアニメーション */
 
 /* portfolioセクションのjsスクロールアニメーション */
-.fade-type-up, .fade-type-down, .fade-type-left, .fade-type-right, .fade-elem {
+.fade-type-left, .fade-type-right {
   opacity: 0;
   transition: .6s;
 }
-
-/* .fade-type-up, .fade-elem {
-  transform: translateY(50px);
-} */
-
-/* .fade-type-down {
-  transform: translateY(-50px);
-} */
 
 .fade-type-left {
   transform: translateX(50px);
@@ -99,30 +91,6 @@
 .fade-type-right {
   transform: translateX(-50px);
 }
-
-/* .fade-elem:nth-of-type(2) {
-  transition-delay: .1s;
-}
-.fade-elem:nth-of-type(3) {
-  transition-delay: .2s;
-}
-.fade-elem:nth-of-type(4) {
-  transition-delay: .3s;
-}
-.fade-elem:nth-of-type(5) {
-  transition-delay: .4s;
-}
-.fade-elem:nth-of-type(6) {
-  transition-delay: .5s;
-}
-.fade-elem:nth-of-type(7) {
-  transition-delay: .6s;
-}
-
-.fade-up-down {
-  opacity: 1;
-  transform: translateY(0);
-} */
 
 .fade-left-right {
   opacity: 1;
