@@ -92,7 +92,7 @@
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-4 js-trigger fade-type-scale">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
@@ -100,7 +100,7 @@
           <h4 class="service-heading">Webサイト制作</h4>
           <p class="text-muted text_justify">コーポレートサイト、コーディング代行、LP制作、WordPressを使ったシステムの導入などWebサイト制作全般をお受けします。ホームページをお持ちでないのならば、大きな機会損失をしている可能性がありますので、HP作成を検討されることをお勧めします。</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 js-trigger fade-type-scale">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
@@ -108,7 +108,7 @@
           <h4 class="service-heading">スマホ対応</h4>
           <p class="text-muted text_justify">80%以上がスマートフォンでWebサイトを閲覧されている現在、Webサイトをレスポンシブ化させることはユーザビリティを向上させる上で重要な役割を担っています。スマホ、タブレット、パソコンどの端末でもストレスなく閲覧するよう、レスポンシブ対応いたします。</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 js-trigger fade-type-scale">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
@@ -130,7 +130,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-left">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -144,7 +144,7 @@
             <p class="text-muted">Date: May 2019</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-right">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -158,7 +158,7 @@
             <p class="text-muted">Date: March 2019</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-left">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -172,7 +172,7 @@
             <p class="text-muted">Date: April 2019</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item flex_50">
+        <div class="col-md-4 col-sm-6 portfolio-item flex_50 js-trigger fade-type-right">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -576,6 +576,26 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+
+      $(window).scroll(function (){
+        var fadeTrigger = $('.js-trigger');
+        $(fadeTrigger).each(function(){
+          var scroll = $(window).scrollTop(),
+              elemTop = $(this).offset().top,
+              windowHeight = $(window).height();
+
+          if (scroll > elemTop - windowHeight){
+            $(this).addClass('fade-scale');
+          }
+        });
+      });
+      $(window).trigger('scroll');
+
+});
+  </script>
 
 </body>
 

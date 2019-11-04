@@ -35,3 +35,16 @@
   }
 }
 /* end/ Portfolioセクション 各コンテンツの配置 */
+
+/* servicesセクションのjsスクロールアニメーション */
+.fade-type-scale {
+  opacity: 0;
+  transform: scale(.5);
+  transition: .6s;
+}
+
+.fade-scale {
+  opacity: 1;
+  transform: scale(1);
+}
+/* end/ servicesセクションのjsスクロールアニメーション */
