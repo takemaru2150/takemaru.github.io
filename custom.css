@@ -23,7 +23,12 @@
 .flex_50 {
   flex: 0 0 50%;
   margin: 0 0 80px;
-  min-width: 50%;
+  min-width: 100%;
+}
+@media (min-width: 767px) {
+  .flex_50 {
+    min-width: 50%;
+  }
 }
 #portfolio .portfolio-item {
   margin: 0 0 50px;
