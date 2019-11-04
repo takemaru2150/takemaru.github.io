@@ -10,9 +10,8 @@
 .text_style {
   color: #2c2c2c;
   letter-spacing: .1em;
-  text-shadow: 
-    4px 4px 0px #d5d5d5, 
-    7px 7px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 4px 4px 0 #d5d5d5,
+  7px 7px 0 rgba(0, 0, 0, 0.2);
 }/* end/ メインセクションのタイトルビジュアル */
 
 /* Servicesセクション 各サービスの説明文 */
