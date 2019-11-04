@@ -4,20 +4,27 @@
 .googleform_wrap {
   display: flex;
   justify-content: center;
-}
-/* end/ コンタクトフォーム */
+}/* end/ コンタクトフォーム */
 
 /* Servicesセクション 各サービスの説明文 */
 .text_justify {
   text-align: justify;
-}
-/* end/ Servicesセクション 各サービスの説明文 */
+}/* end/ Servicesセクション 各サービスの説明文 */
 
-/* footer 各コンテンツの配置 */
-.flex-end {
-  justify-content: flex-end;
+/* Servicesセクション 各コンテンツの配置*/
+.mb_70 {
+  margin-bottom: 70px;
 }
-/* end/ footer 各コンテンツの配置 */
+
+.mb_70:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 767px) {
+  .mb_70 {
+    margin-bottom: 0;
+  }
+}/* end/ Servicesセクション 各コンテンツの配置*/
 
 /* Portfolioセクション 各コンテンツの配置 */
 .flex_50 {
@@ -38,8 +45,14 @@
   #portfolio .portfolio-item {
     margin: 0 0 80px;
   }
+}/* end/ Portfolioセクション 各コンテンツの配置 */
+
+/* footer 各コンテンツの配置 */
+.flex-end {
+  justify-content: flex-end;
 }
-/* end/ Portfolioセクション 各コンテンツの配置 */
+/* end/ footer 各コンテンツの配置 */
+
 
 /* servicesセクションのjsスクロールアニメーション */
 .fade-type-scale {
@@ -51,8 +64,7 @@
 .fade-scale {
   opacity: 1;
   transform: scale(1);
-}
-/* end/ servicesセクションのjsスクロールアニメーション */
+}/* end/ servicesセクションのjsスクロールアニメーション */
 
 /* portfolioセクションのjsスクロールアニメーション */
 .fade-type-up, .fade-type-down, .fade-type-left, .fade-type-right, .fade-elem {
@@ -103,5 +115,4 @@
 .fade-left-right {
   opacity: 1;
   transform: translateX(0);
-}
-/* end/ portfolioセクションのjsスクロールアニメーション */
+}/* end/ portfolioセクションのjsスクロールアニメーション */
