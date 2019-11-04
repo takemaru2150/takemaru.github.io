@@ -38,7 +38,10 @@
   }
 }
 #portfolio .portfolio-item {
-  margin: 0 0 50px;
+  margin: 0 0 70px;
+}
+#portfolio .portfolio-item:last-child {
+  margin: 0;
 }
 
 @media (min-width: 767px) {
