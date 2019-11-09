@@ -11,6 +11,7 @@
   line-height: 1.2;
   margin-bottom: 75px;
 }
+
 /* コンタクトフォーム */
 .googleform_wrap {
   display: flex;
@@ -29,7 +30,6 @@
 .about_wrap {
   display: block;
 }
-
 @media screen and (min-width: 768px) {
   .about_wrap {
     display: flex;
@@ -41,7 +41,6 @@
   margin-bottom: 50px;
   width: 100%;
 }
-
 @media screen and (min-width: 768px) {
   .about_img {
     margin: 0;
@@ -53,7 +52,6 @@
   text-align: center;
   width: 100%;
 }
-
 @media screen and (min-width: 768px) {
   .about_text {
     text-align: center;
@@ -97,13 +95,11 @@
   margin-top: 16px;
   padding: 0;
 }
-
 @media screen and (min-width: 768px) {
   .skill_content_wrap {
     padding-inline-start: 40px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .skill_content_wrap {
     font-size: 1rem;
@@ -118,7 +114,6 @@
   text-align: center;
   width: 20%;
 }
-
 @media screen and (min-width: 768px) {
   .skill_content {
     margin-bottom: 50px;
@@ -136,7 +131,6 @@
   right: 0;
   width: 24px;
 }
-
 @media screen and (min-width: 768px) {
   .skill_content::before {
     height: 40px;
@@ -225,9 +219,11 @@
     min-width: 50%;
   }
 }
+
 #portfolio .portfolio-item {
   margin: 0 0 70px;
 }
+
 #portfolio .portfolio-item:last-child {
   margin: 0;
 }
