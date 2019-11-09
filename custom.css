@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+p {
+  /* line-height: 1.2em; */
+}
+
 /* コンタクトフォーム */
 .googleform_wrap {
   display: flex;
@@ -26,14 +30,35 @@
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .about_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .about_img {
   margin-bottom: 50px;
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .about_img {
+    margin: 0;
+    width: 40%;
+  }
+}
+
 .about_text {
   text-align: center;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about_text {
+    text-align: center;
+    width: 50%;
+  }
 }
 
 /* aboutのprofileコンテンツ */
@@ -67,8 +92,22 @@
 .skill_content_wrap {
   display: flex;
   flex-wrap: wrap;
+  font-size: 11px;
   justify-content: space-between;
   margin-top: 16px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .skill_content_wrap {
+    padding-inline-start: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skill_content_wrap {
+    font-size: 1rem;
+  }
 }
 
 .skill_content {
@@ -78,6 +117,13 @@
   position: relative;
   text-align: center;
   width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .skill_content {
+    margin-bottom: 50px;
+    padding-top: 60px;
+  }
 }
 
 .skill_content::before {
@@ -92,34 +138,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about_wrap {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .about_img {
-    margin: 0;
-    width: 40%;
-  }
-
-  .about_text {
-    text-align: center;
-    width: 50%;
-  }
-
-  .skill_content {
-    margin-bottom: 50px;
-    padding-top: 60px;
-  }
-
   .skill_content::before {
     height: 40px;
     width: 40px;
-  }
-
-  .skill_content._8:before {
-    bottom: 32px;
-    width: 80px;
   }
 }
 
@@ -154,6 +175,8 @@
 .skill_content._8:before {
   background: url(../img/about/jquery.png) no-repeat;
   background-size: contain;
+  bottom: 24px;
+  width: 40px;
 }
 .skill_content._9:before {
   background: url(../img/about/xd.png) no-repeat;
@@ -164,8 +187,11 @@
   background-size: contain;
 }
 
-
-/* end/ aboutセクションのCSS */
+@media screen and (min-width: 768px) {
+  .skill_content._8:before {
+    width: 60px;
+  }
+}/* end/ aboutセクションのCSS */
 
 
 /* Servicesセクション 各サービスの説明文 */
