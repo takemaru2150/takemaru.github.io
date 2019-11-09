@@ -7,10 +7,10 @@
   width: 100%;
 }
 
-p {
-  /* line-height: 1.2em; */
+.h4_to_p_changed {
+  line-height: 1.2;
+  margin-bottom: 75px;
 }
-
 /* コンタクトフォーム */
 .googleform_wrap {
   display: flex;
@@ -66,12 +66,12 @@ p {
   margin-bottom: 50px;
 }
 
-.about_h4 {
+.about_h3 {
   font-size: 30px;
   margin-bottom: 50px;
 }
 
-.about_h4::after {
+.about_h3::after {
   border-bottom: 3px solid #fed136;
   content: "";
   display: block;
