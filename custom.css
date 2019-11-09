@@ -242,10 +242,15 @@
 
 
 /* topセクションとservicesセクションのjsスクロールアニメーション */
-.fade-type-scale {
+.fade-type-scale_fast {
   opacity: 0;
   transform: scale(.5);
   transition: .6s;
+}
+.fade-type-scale_slow {
+  opacity: 0;
+  transform: scale(.5);
+  transition: 1.2s;
 }
 
 .fade-scale {
@@ -256,6 +261,7 @@
 /* portfolioセクションのjsスクロールアニメーション */
 .fade-type-left, .fade-type-right {
   opacity: 0;
+  transform: scale(.5);
   transition: .6s;
 }
 
