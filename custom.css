@@ -13,9 +13,17 @@
 }
 
 /* コンタクトフォーム */
-.googleform_wrap {
-  display: flex;
-  justify-content: center;
+.contact_label {
+  color: #fff;
+}
+
+.contact_label::before {
+  background: #f92931;
+  border-radius: 20px;
+  color: #fff;
+  content: "必須";
+  margin-right: 10px;
+  padding: 6px 10px;
 }/* end/ コンタクトフォーム */
 
 /* メインセクションのタイトルビジュアル */
