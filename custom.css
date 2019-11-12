@@ -12,27 +12,25 @@
   margin-bottom: 75px;
 }
 
-/* コンタクトフォーム */
-.contact_label {
-  color: #fff;
-}
 
-.contact_label::before {
-  background: #f92931;
-  border-radius: 20px;
-  color: #fff;
-  content: "必須";
-  margin-right: 10px;
-  padding: 6px 10px;
-}/* end/ コンタクトフォーム */
-
-/* メインセクションのタイトルビジュアル */
+/* topセクションのタイトルビジュアル */
 .text_style {
   color: #2c2c2c;
   letter-spacing: .1em;
   text-shadow: 4px 4px 0 #d5d5d5,
   7px 7px 0 rgba(0, 0, 0, 0.2);
-}/* end/ メインセクションのタイトルビジュアル */
+}/* end/ topセクションのタイトルビジュアル */
+
+/* topセクションのコンタクトボタン */
+.top_btn {
+  padding: 15px 50px;
+}
+@media screen and (min-width: 768px) {
+  .top_btn {
+    padding: 20px 80px;
+  }
+}/* end/ topセクションのコンタクトボタン */
+
 
 /* aboutセクションのCSS */
 .about_wrap {
@@ -196,26 +194,6 @@
 }/* end/ aboutセクションのCSS */
 
 
-/* Servicesセクション 各サービスの説明文 */
-.text_justify {
-  text-align: justify;
-}/* end/ Servicesセクション 各サービスの説明文 */
-
-/* Servicesセクション 各コンテンツの配置*/
-.mb_70 {
-  margin-bottom: 70px;
-}
-
-.mb_70:last-child {
-  margin-bottom: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .mb_70 {
-    margin-bottom: 0;
-  }
-}/* end/ Servicesセクション 各コンテンツの配置*/
-
 /* Portfolioセクション 各コンテンツの配置 */
 .flex_50 {
   flex: 0 0 50%;
@@ -241,6 +219,55 @@
     margin: 0 0 80px;
   }
 }/* end/ Portfolioセクション 各コンテンツの配置 */
+
+
+/* Servicesセクション 各サービスの説明文 */
+.text_justify {
+  text-align: justify;
+}/* end/ Servicesセクション 各サービスの説明文 */
+
+/* Servicesセクション 各コンテンツの配置*/
+.mb_70 {
+  margin-bottom: 70px;
+}
+
+.mb_70:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .mb_70 {
+    margin-bottom: 0;
+  }
+}/* end/ Servicesセクション 各コンテンツの配置*/
+
+
+/* コンタクトセクション */
+.contact_label {
+  color: #fff;
+}
+.contact_label::before {
+  background: #f92931;
+  border-radius: 20px;
+  color: #fff;
+  content: "必須";
+  margin-right: 10px;
+  padding: 6px 10px;
+}
+
+/* contactセクションのコンタクトボタン */
+.contact_btn {
+  padding: 15px 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact_btn {
+    padding: 20px 128px;
+    width: auto;
+  }
+}/* end/ contactセクションのコンタクトボタン */
+/* end/ コンタクトセクション */
+
 
 /* footer 各コンテンツの配置 */
 .flex-end {
