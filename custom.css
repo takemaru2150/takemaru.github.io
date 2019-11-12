@@ -201,31 +201,27 @@
 .__center {
   justify-content: center;
 }
-
-.flex_50 {
-  flex: 0 0 50%;
-  margin: 0 0 80px;
-  min-width: 100%;
-}
 @media screen and (min-width: 768px) {
-  .flex_50 {
-    min-width: 50%;
+  .__center {
+    justify-content: unset;
   }
 }
 
 #portfolio .portfolio-item {
+  flex: 0 0 50%;
   margin: 0 0 70px;
+  margin: 0 0 80px;
   min-width: 81.4%;
   padding: 0;
 }
-
 #portfolio .portfolio-item:last-child {
   margin: 0;
 }
-
 @media screen and (min-width: 768px) {
   #portfolio .portfolio-item {
     margin: 0 0 80px;
+    min-width: 50%;
+    padding: 0 30px;
   }
 }/* end/ Portfolioセクション */
 
