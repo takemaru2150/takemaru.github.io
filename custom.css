@@ -194,7 +194,11 @@
 }/* end/ aboutセクションのCSS */
 
 
-/* Portfolioセクション 各コンテンツの配置 */
+/* Portfolioセクション */
+.__center {
+  justify-content: center;
+}
+
 .flex_50 {
   flex: 0 0 50%;
   margin: 0 0 80px;
@@ -208,6 +212,8 @@
 
 #portfolio .portfolio-item {
   margin: 0 0 70px;
+  min-width: 81.4%;
+  padding: 0;
 }
 
 #portfolio .portfolio-item:last-child {
@@ -218,7 +224,7 @@
   #portfolio .portfolio-item {
     margin: 0 0 80px;
   }
-}/* end/ Portfolioセクション 各コンテンツの配置 */
+}/* end/ Portfolioセクション */
 
 
 /* Servicesセクション 各サービスの説明文 */
@@ -296,16 +302,15 @@
 /* portfolioセクションのjsスクロールアニメーション */
 .fade-type-left, .fade-type-right {
   opacity: 0;
-  transform: scale(.5);
   transition: .6s;
 }
 
 .fade-type-left {
-  transform: translateX(50px);
+  transform: translateX(42px) scale(.9);
 }
 
 .fade-type-right {
-  transform: translateX(-50px);
+  transform: translateX(-42px) scale(.9);
 }
 
 .fade-left-right {
