@@ -83,9 +83,12 @@
 }
 
 .about_p_wrap {
-  /* margin: 0 0 0 auto; */
-  /* width: 90%; */
-  padding-left: 50px;
+  padding-left: 33px;
+}
+@media screen and (min-width: 768px) {
+  .about_p_wrap {
+    padding-left: 50px;
+  }
 }
 
 .about_p {
