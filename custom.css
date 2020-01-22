@@ -235,6 +235,7 @@
 /* font指定 */
 .portfolio-caption h3 {
   /* font-family: "MyFont"; */
+  font-weight: normal;
 }/* end/ Portfolioセクション */
 
 
