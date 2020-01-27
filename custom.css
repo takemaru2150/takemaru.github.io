@@ -235,7 +235,8 @@
 /* font指定 */
 .portfolio-caption h3 {
   /* font-family: "MyFont"; */
-  font-family: 見出ゴMB31;
+  /* font-family: 見出ゴMB31; */
+  font-family: "Noto Sans JP", sans-serif;
   /* font-weight: 400; */
 }/* end/ Portfolioセクション */
 
